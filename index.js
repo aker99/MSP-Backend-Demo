@@ -9,5 +9,5 @@ app.use(express.static('./statics'));
 app.get('/',(req,res) => {
     res.sendFile('index.html',{root: __dirname+'/templates'});
 });
-
-app.listen(1337);
+const port=process.env.PORT || 80
+app.listen(port);

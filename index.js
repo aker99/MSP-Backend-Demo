@@ -10,4 +10,4 @@ app.get('/',(req,res) => {
     res.sendFile('index.html',{root: __dirname+'/templates'});
 });
 
-app.listen(80);
+app.listen(1337);
